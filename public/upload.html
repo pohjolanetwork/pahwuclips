@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload</title>
+  <!-- Import custom stylesheet for upload page -->
+  <link rel="stylesheet" href="assets/upload.css">
+  <!-- Import Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>File Uploader</header>
+    <form id="uploadForm">
+      <input id="fileInput" class="file-input" type="file" name="file" multiple hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File(s) to Upload</p>
+      <button type="button" id="uploadButton">Upload</button>
+    </form>
+    <!-- Progress container -->
+    <div id="progressContainer" style="display: none;">
+      <div id="progressBar" class="progress-bar"></div>
+      <p id="progressText">Uploading...</p>
+    </div>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+
+  <!-- Import custom script for upload functionality -->
+  <script src="assets/upload.js"></script>
+</body>
+</html>

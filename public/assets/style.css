@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.header {
+  background-color: #4CAF50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Upload Button Styles */
+.upload-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Video List Styles */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between video containers */
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.video-item {
+  width: 320px; /* Fixed width for all videos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  max-height: 180px; /* Ensure video fits within the container */
+  border-radius: 8px;
+}
+
+.video-info {
+  margin-top: 10px;
+  overflow: hidden; /* Ensure content does not overflow */
+  text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+  white-space: nowrap; /* Prevent text wrapping */
+  width: 100%; /* Make sure info takes up full width */
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #e43b3b;
+}
+
